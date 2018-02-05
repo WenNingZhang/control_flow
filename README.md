@@ -1,4 +1,4 @@
-
+i
 node.js流程控制包含下面几种:
 
 ![image](./picture/control_flow.png)
