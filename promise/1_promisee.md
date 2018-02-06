@@ -30,11 +30,14 @@ let p = new Promisee((resolve, reject) => {
 		resolve('hello');
 }
 ```
-形参是fn，然后调用fn，这时实参变成执行1_promisee.js中的函数`fulfill`和···
+形参是fn，然后调用fn函数，实际上调用函数中的`resolve('hello')`，
+而这个函数对应的是promisee.js中的
+```
+	function fulfill(result) {
+		state = FULFILLED;
+		value = result;
+	}
+```
+函数。
 
-
-
-
-
-
-
+下一篇文章解决promise的异步问题
