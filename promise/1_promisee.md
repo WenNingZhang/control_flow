@@ -4,15 +4,15 @@
 
 #### 预备知识
 
-一、使用`Symbol`创建常量。
+#### 1. 使用`Symbol`创建常量。
 
  Symbol是完全不一样的东西。一旦创建就不可更改，不能对它们设置属性。另一方面，每个Symbol是独一无二的，不与其他Symbol重复(即使是使用相同的Symbol创建)。
 
-二、promise的三种状态
+#### 2. promise的三种状态
 
-1. `pending`(悬挂状态，默认是悬挂状态)，
-2. `fulfilled`(已成功)，
-3. `rejected`(以失败)。
++ `pending`(悬挂状态，默认是悬挂状态)
++ `fulfilled`(已成功)
++ `rejected`(以失败)
 
 #### 代码逻辑
 
