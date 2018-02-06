@@ -41,7 +41,7 @@ console.log(q); // true
 + 当执行到`pending`状态后，通过一个变量对象`handler`把`console.log.bind(null, 'over'), console.log.bind(null, 'error')`存储下来 。
 + 先执行主任务栈，主任务栈清空后，`task queune`的任务出栈后再执行存下来的函数，就可以啦。
 
-接下来问题又出现啦。
+ 接下来又出现一个问题，注释`setTimeout`，执行`resolve('hello')`函数，报错啦，
 
 ```
 let p = new Promisee((resolve, reject) => {
