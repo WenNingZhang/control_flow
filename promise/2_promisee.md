@@ -1,4 +1,8 @@
-### 第二阶段-->解决promise异步问题
+### 第二阶段
+
+解决promise异步问题
+
+#### 问题
 
 如果将上述代码改成这样
 ```
@@ -51,3 +55,4 @@ p.then(console.log.bind(null, 'over'), console.log.bind(null, 'error'));
 注释`setTimeout`后，又报错啦，这是因为在调用fulfill函数后，handler中还没有保存then中的函数。
 
 在`promise2中`对函数进行一次改写。改写成`next`，这样就可以啦。
+
